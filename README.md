@@ -8,8 +8,13 @@ You can test de app [here](https://login-pwa-91589.web.app/#/)
 
 With the next user to test:
 
-*User:* prueba@pwa.com
-*Pass:* pwa1234
+**User:** prueba@pwa.com
+**Pass:** pwa1234
+
+OR:
+
+**User:** prueba2@pwa.com
+**Pass:** pwa1234
 
 ## Build Setup
 
@@ -18,6 +23,8 @@ With the next user to test:
 npm install
 
 # Configure a Firebase app with email authentication and set the firebase config on main.js
+
+var firebaseConfig = {} //firebase config
 
 # serve with hot reload at localhost:8080
 npm run dev

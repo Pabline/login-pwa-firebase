@@ -7,7 +7,7 @@ import firebase from 'firebase'
 
 Vue.config.productionTip = false
 
-var firebaseConfig = ['YOUR_FIREBASE_CONF']
+var firebaseConfig = {} //firebase config
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig)
 
