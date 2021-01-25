@@ -13,7 +13,7 @@ describe('LoginForm.vue', () => {
   it('should render correct contents', () => {
     expect(vm.email).to.equal(null)
     expect(vm.password).to.equal(null)
-    expect(vm.error).to.equal(null)
+    expect(vm.error).to.equal(undefined)
     expect(vm.$el.querySelector('#email').placeholder)
       .to.equal('Email')
     expect(vm.$el.querySelector('#password').placeholder)
