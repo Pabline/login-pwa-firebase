@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <span>BBVA Login</span>
+      <span>Login</span>
     </header>
     <main>
       <router-view></router-view>
