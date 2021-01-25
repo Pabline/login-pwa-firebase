@@ -4,20 +4,22 @@
     <form action="" @submit="submitForm" class="form">
       <input type="text" id="email" required name="email" v-model="email" placeholder="Email">
       <input type="password" id="password" required name="password" v-model="password" placeholder="Password">
+      <span id="error" v-if="error">{{error}}</span>
       <button type="submit" id="login">Log In</button>
     </form>
-    <span id="error" v-if="error">{{error}}</span>
   </div>
 </template>
 
 <script>
 export default {
   name: 'loginform',
+  props: {
+    error: String
+  },
   data () {
     return {
       email: null,
-      password: null,
-      error: null
+      password: null
     }
   },
   methods: {
@@ -68,7 +70,7 @@ button {
   font-weight: bold;
 }
 
-.error {
+#error {
   color: red;
 }
 
